@@ -1,0 +1,17 @@
+{
+    "name": "jar-rpg-bot",
+    "version": "1.0.0",
+    "description": "Bot de RPG narrativo para Discord",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "start": "node index.js",
+      "deploy": "node deploy-commands.js"
+    },
+    "dependencies": {
+      "discord.js": "^14.14.1",
+      "dotenv": "^16.3.1",
+      "firebase-admin": "^11.11.0",
+      "node-fetch": "^3.3.2"
+    }
+  }
