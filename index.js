@@ -68,3 +68,5 @@ for (const file of eventFiles) {
 client.login(process.env.DISCORD_TOKEN)
   .then(() => console.log('Bot conectado com sucesso!'))
   .catch(error => console.error('Erro ao conectar o bot:', error));
+
+  import './keepalive.js';
