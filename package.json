@@ -14,5 +14,8 @@
         "express": "^4.21.2",
         "firebase-admin": "^11.11.0",
         "node-fetch": "^3.3.2"
+    },
+    "devDependencies": {
+        "@flydotio/dockerfile": "^0.7.9"
     }
 }
