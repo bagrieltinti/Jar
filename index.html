@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jar Life Simulator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="identity">
+      <div class="player-name" id="playerName">Player</div>
+      <div class="player-location" id="playerLocation">Unknown</div>
+    </div>
+    <div class="age">Age: <span id="playerAge">0</span></div>
+    <div class="money">Money: <span id="playerMoney">$0</span></div>
+  </header>
+
+  <main class="main-layout">
+    <section class="log-panel">
+      <h2>Life Log</h2>
+      <div id="logEntries" class="log-entries"></div>
+    </section>
+
+    <section class="content-panel">
+      <nav class="tabs">
+        <button data-tab="age" class="tab-button active">Age</button>
+        <button data-tab="activities" class="tab-button">Activities</button>
+        <button data-tab="finance" class="tab-button">Finance</button>
+        <button data-tab="relationships" class="tab-button">Relationships</button>
+        <button data-tab="career" class="tab-button">Career</button>
+        <button data-tab="education" class="tab-button">Education</button>
+        <button data-tab="health" class="tab-button">Health</button>
+      </nav>
+      <div class="tab-content" id="tab-age">
+        <h3>Time Marches On</h3>
+        <p>Each year your life unfolds. Choose actions wisely before aging.</p>
+        <button id="ageButton" class="primary">Age Up / Next Year</button>
+        <div id="yearSummary" class="summary"></div>
+      </div>
+      <div class="tab-content hidden" id="tab-activities"></div>
+      <div class="tab-content hidden" id="tab-finance"></div>
+      <div class="tab-content hidden" id="tab-relationships"></div>
+      <div class="tab-content hidden" id="tab-career"></div>
+      <div class="tab-content hidden" id="tab-education"></div>
+      <div class="tab-content hidden" id="tab-health"></div>
+    </section>
+
+    <aside class="stats-panel">
+      <h2>Stats</h2>
+      <div id="statsBars"></div>
+    </aside>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+      <button id="modalClose" class="primary">Close</button>
+    </div>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
